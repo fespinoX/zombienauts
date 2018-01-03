@@ -49,3 +49,19 @@
 .homepage-hero-module{
     background-color: aqua;
 }
+
+#titulo{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    margin-top: 450px;
+}
+
+#titulo h1{
+    /*el estilo del título va acá!*/
+}
+
+#titulo p{
+    /*el estilo de la bajada  va acá!*/
+}
