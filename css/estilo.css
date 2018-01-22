@@ -2,15 +2,58 @@
 
 /*
 
-VEIGE_ #b5b69c
-GRIS_ #7d7e73
-BORDO CLARO_ #876969
-BORDO MEDIO_ #6d4141
-BORDO OSCURO_ #422020
-GRIS OSCURO_ #323232
-VIOLETA_ #645188
+VERDE claro_ #B3C43E
+VERDE oscuro_ #009F6D
+BORDO_ #AC0D38
+VIOLETA_ #8F2796
+GRIS_ #4C4C4C
+NEGRO_ #2b2b2b
+BLANCO_ #D5D5D5
 
 */
+
+
+/* FUENTES */
+
+/*
+font-family: 'i_pixel_uregular';
+font-family: 'telegramaraw';
+*/
+
+
+
+/* MENU */
+
+.barrita {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.menu li {
+    float: right;
+    background-color: black;
+    padding: 2px;
+    margin: 0 1px;
+}
+
+#logo {
+    float: left;
+    background-color: red;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    font-size: 0;
+}
 
 /* COVER */
 
@@ -69,13 +112,103 @@ VIOLETA_ #645188
     position: absolute;
     z-index: 1;
     color: #fff;
-    margin-top: 450px;
+    margin-top: 350px;
 }
 
 #titulo h1{
-    /*el estilo del título va acá!*/
+    font-family: 'telegramaraw';
+    text-transform: uppercase;
+    font-size: 80px;
+}
+
+#titulo h1 span{
+    font-size: 130px;
 }
 
 #titulo p{
-    /*el estilo de la bajada  va acá!*/
+    /*el estilo de la bajada del cover va acá!*/
 }
+
+
+/* INTRO */
+
+#intro{
+    padding: 70px 0;
+}
+
+#intro h2{
+    font-family: 'telegramaraw';
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #AC0D38;
+}
+
+#intro .bajada{
+    font-size: 20px;
+    padding: 10px 0 15px 0;
+}
+
+#intro p{
+    font-size: 16px;
+}
+
+#intro b{
+    color: #8F2796;
+    font-weight: 500;
+}
+
+
+/* COUNTER */
+
+#counter{
+    background-image: url('../cositas/img/zombieyuri.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+}
+
+#counter .counter-value{
+    font-size: 90px;
+    color: #fff;
+    font-family: 'telegramaraw';
+}
+
+#counter p{
+    color: #fff;
+    font-size: 16px;
+}
+
+
+/* NOTICIAS */
+
+#news{
+    background-color: #2b2b2b;
+    padding: 70px 0;
+    color: #D5D5D5;
+}
+
+#news h2{
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #AC0D38;
+}
+
+#news img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
