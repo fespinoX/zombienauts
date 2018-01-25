@@ -10,6 +10,18 @@ GRIS_ #4C4C4C
 NEGRO_ #2b2b2b
 BLANCO_ #D5D5D5
 
+
+DE LAS IMAGENES
+
+AMARILLO_ #EBCF47
+NARANJA_ #F37B3E
+ROSITA_ #D77282
+PALIDO_ #FD9E8C
+AZUL_ #256CA4
+VERDE_ #719861
+
+
+SEMI BLANCO_ #E6E1D7
 */
 
 
@@ -18,8 +30,20 @@ BLANCO_ #D5D5D5
 /*
 font-family: 'i_pixel_uregular';
 font-family: 'telegramaraw';
+
+font-family: 'gt_walsheimregular';
+font-family: 'gt_walsheimbold';
+
+font-family: 'bebas_neueregular';
 */
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gt_walsheimregular';
+}
 
 
 /* MENU */
@@ -32,33 +56,94 @@ font-family: 'telegramaraw';
 
 .menu {
     list-style-type: none;
-    margin: 0;
+    margin-top: 50px;
     padding: 0;
     overflow: hidden;
     background-color: transparent;
 }
 
+.menu a{
+    padding-bottom: 5px;
+}
+
+.menu a:focus,
+.menu  a:hover {
+    text-decoration: none;
+}
+
+.menu a span,
+.menu a span {
+    border-bottom: transparent;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.menu a:focus span,
+.menu  a:hover span {
+    border-bottom: 1px solid #fff;
+}
+
+
 .menu li {
-    float: right;
-    background-color: black;
-    padding: 2px;
+    padding: 0 30px;
     margin: 0 1px;
+    color: #fff;
+    font-family: 'gt_walsheimregular';
+    font-size: 15px;
+    display: inline-block;
 }
 
 #logo {
-    float: left;
-    background-color: red;
+    background-color: #fff;
     background-repeat: no-repeat;
     border-radius: 50%;
     height: 50px;
     width: 50px;
     font-size: 0;
+    position: absolute;
 }
+
+
+/* BOTONES */
+
+.botonBase{
+    display: inline-block;
+    padding: 20px 30px;
+    border: 1px solid rgba(241,245,247,0.4);
+    color: #f1f5f7;
+    text-transform: uppercase;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.botonBase:focus,
+.botonBase:hover{
+    border-color: #f1f5f7;
+    color: #f1f5f7;
+    text-decoration: none;
+
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #719861;
+}
+
 
 /* COVER */
 
+    /* foto cover */
+
+#cover{
+    height: 100vh;
+    width: 100%;
+    background-color: #256CA4;
+}
+
     /* video hero */
 
+/*
 .homepage-hero-module {
     border-right: none;
     border-left: none;
@@ -101,32 +186,43 @@ font-family: 'telegramaraw';
     width: 100%;
 }
 
+*/
+
     /* video cover personalizado*/
+
+
+/*
 
 .homepage-hero-module{
     background-color: aqua;
 }
+
+*/
+
 
 #titulo{
     width: 100%;
     position: absolute;
     z-index: 1;
     color: #fff;
-    margin-top: 350px;
+    margin-top: 15%;
 }
 
 #titulo h1{
-    font-family: 'telegramaraw';
+    font-family: 'bebas_neueregular';
     text-transform: uppercase;
-    font-size: 80px;
+    font-size: 150px;
 }
 
 #titulo h1 span{
-    font-size: 130px;
+    font-size: 350px;
+    line-height: 205px;
+    font-family: 'bebas_neueregular';
 }
 
 #titulo p{
-    /*el estilo de la bajada del cover va acá!*/
+    font-family: 'gt_walsheimregular';
+    font-size: 18px;
 }
 
 
@@ -134,26 +230,29 @@ font-family: 'telegramaraw';
 
 #intro{
     padding: 70px 0;
+    background-color: #2b2b2b;
 }
 
 #intro h2{
-    font-family: 'telegramaraw';
+    font-family: 'bebas_neueregular';
     text-transform: uppercase;
-    font-size: 40px;
-    color: #AC0D38;
+    font-size: 80px;
+    color: #F37B3E;
 }
 
 #intro .bajada{
-    font-size: 20px;
     padding: 10px 0 15px 0;
+    text-transform: uppercase;
+    font-size: 24px;
 }
 
 #intro p{
     font-size: 16px;
+    color: #e6e1d7;
 }
 
 #intro b{
-    color: #8F2796;
+    color: #256CA4;
     font-weight: 500;
 }
 
@@ -161,20 +260,22 @@ font-family: 'telegramaraw';
 /* COUNTER */
 
 #counter{
-    background-image: url('../cositas/img/zombieyuri.jpg');
+    /*background-image: url('../cositas/img/zombieyuri.jpg');*/
+    background-color: #D77282;
     background-size: cover;
     background-position: center;
     padding: 150px 0;
 }
 
 #counter .counter-value{
-    font-size: 90px;
-    color: #fff;
-    font-family: 'telegramaraw';
+    font-size: 200px;
+    line-height: 160px;
+    color: #2b2b2b;
+    font-family: 'bebas_neueregular';
 }
 
 #counter p{
-    color: #fff;
+    color: #2b2b2b;
     font-size: 16px;
 }
 
@@ -189,8 +290,9 @@ font-family: 'telegramaraw';
 
 #news h2{
     text-transform: uppercase;
-    font-size: 16px;
-    color: #AC0D38;
+    font-family: 'bebas_neueregular';
+    font-size: 30px;
+    color: #F37B3E;
 }
 
 #news img{
