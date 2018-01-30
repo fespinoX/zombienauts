@@ -122,6 +122,7 @@ font-family: 'bebas_neueregular';
 
 .botonBase:focus,
 .botonBase:hover{
+    transform: scale(1.1);
     border-color: #f1f5f7;
     color: #f1f5f7;
     text-decoration: none;
@@ -293,17 +294,77 @@ footer{
     color: #D5D5D5;
 }
 
-#news h2{
+#news .portaImagenNoticia{
+    height: 500px;
+    padding-top: 85%;
+    background-image: url('../cositas/img/rocket.jpg');
+
+    filter: grayscale(100%); /* Current draft standard */
+    -webkit-filter: grayscale(100%); /* New WebKit */
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%); 
+    -o-filter: grayscale(100%); /* Not yet supported in Gecko, Opera or IE */ 
+    filter: url(resources.svg#desaturate); /* Gecko */
+    filter: gray; /* IE */
+    -webkit-filter: grayscale(1); /* Old WebKit */
+
+    background-size: cover;
+    background-position: top;
+    -webkit-transition-duration: 0.4s;
+}
+
+#news .portaImagenNoticia:hover,
+#news .portaImagenNoticia:active{
+    height: 500px;
+    padding-top: 85%;
+    background-image: url('../cositas/img/rocket.jpg');
+    background-position: top;
+
+    filter: none;
+    -webkit-filter: none;
+    -moz-filter: none;
+    -ms-filter: none;
+    -o-filter: none;
+}
+
+#news .portaImagenNoticia .tituloNoticia{
+    color: #F37B3E;
     text-transform: uppercase;
     font-family: 'bebas_neueregular';
-    font-size: 30px;
-    color: #F37B3E;
 }
 
-#news img{
-    width: 100%;
+#news .portaImagenNoticia .tituloNoticia h2{
+    display: inline-block;
+    padding: 5px 5px 5px 20px;
+    font-size: 40px;
+    text-decoration: underline;
+    -webkit-transition-duration: 0.4s;
 }
 
+#news .portaImagenNoticia .tituloNoticia:hover h2,
+#news .portaImagenNoticia .tituloNoticia:active h2{
+    background-color: #F37B3E;
+    color: #E6E1D7;
+}
+
+#news .portaImagenNoticia .categoriaNoticia{
+    margin-left: 20px;
+    padding: 5px;
+    background-color: #F37B3E;
+    color: #E6E1D7;
+}
+
+
+#news .portaImagenNoticia p{
+    padding-left: 15px;
+    text-align: left;
+}
+
+#news .portaTexto{
+    padding: 20px;
+    background-color: #E6E1D7;
+    color: #2b2b2b;
+}
 
 /* [SUBPAGINAS] COVER */
 
