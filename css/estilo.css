@@ -75,7 +75,7 @@ p{
     padding: 20px 30px;
     border: 1px solid rgba(241,245,247,0.4);
     background-color: transparent;
-    color: #f1f5f7;
+    color: #E6E1D7;
     text-transform: uppercase;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
@@ -84,8 +84,8 @@ p{
 .botonBase:focus,
 .botonBase:hover{
     transform: scale(1.1);
-    border-color: #f1f5f7;
-    color: #f1f5f7;
+    border-color: #E6E1D7;
+    color: #E6E1D7;
     text-decoration: none;
 
 }
@@ -286,7 +286,7 @@ footer{
     width: 100%;
     position: absolute;
     z-index: 1;
-    color: #fff;
+    color: #E6E1D7;
     margin-top: 25vh;
 }
 
@@ -313,14 +313,6 @@ footer{
 
     #titulo{
         margin-top: 35vh;
-    }
-
-    #titulo{
-        width: 100%;
-        position: absolute;
-        z-index: 1;
-        color: #fff;
-        margin-top: 25vh;
     }
 
     #titulo h1{
@@ -367,6 +359,29 @@ footer{
 #intro b{
     color: #256CA4;
     font-weight: 500;
+}
+
+
+/* [INDEX] REASONS */
+
+#reasons{
+    padding-bottom: 60px;
+}
+
+#reasons h3{
+    border-bottom: 1px solid #F37B3E;
+    font-family: 'bebas_neueregular';
+    font-size: 50px;
+    color: #F37B3E;
+}
+
+#reasons p{
+    color: #E6E1D7;
+    font-size: 35px;
+}
+
+#reasons .contenedorReasons{
+    min-height: 300px;
 }
 
 
@@ -700,8 +715,8 @@ footer{
     background-color: transparent;
     -webkit-appearance: none;
     border: 0;
-    border-bottom: 1px #fff solid;
-    border-left: 1px #fff solid;
+    border-bottom: 1px #E6E1D7 solid;
+    border-left: 1px #E6E1D7 solid;
 }
 
 .inputForm:focus { 
