@@ -80,7 +80,7 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 col-sm-12">
 
-                    <p class="text-center">So... you've decided you want to come with us to the great red planet. That's awesome! We'll take you there! Just let us know a little bit about yourself right here below:</p>
+                    <p>So... you've decided you want to come with us to the great red planet. That's awesome! We'll take you there! Just let us know a little bit about yourself right here below:</p>
 
                     
                     <form action="enviar_formulario.php" method="post" enctype="multipart/form-data">
@@ -94,13 +94,24 @@
                             <label>Mail</label>
                             <input class="inputForm" type="email" name="mail" placeholder="xxxx@mail.com" required="">
                         </div>
+
+                        <div>
+                            <label>Phone</label>
+                            <input class="inputForm" type="phone" name="phone" required="">
+                        </div>
+
+                        <div>
+                            <label>Undead age</label>
+                            <input class="inputForm" type="number" name="age" required="">
+                        </div>
                         
-                        <div id="textarea">
-                            <textarea class="inputForm" name="comentario" cols="35" rows="10" placeholder="Tell us why you wanna come!" required=""></textarea>
+                        <div>
+                            <label>Info</label>
+                            <textarea class="inputForm textareaForm" name="comentario" cols="35" rows="10" placeholder="Tell us why you wanna come!" required=""></textarea>
                         </div>
               
-                        <div>
-                            <input type="submit" value="Send">
+                        <div class="portaBoton">
+                            <input class="botonBase" type="submit" value="Send">
                         </div>
         
                     </form>
