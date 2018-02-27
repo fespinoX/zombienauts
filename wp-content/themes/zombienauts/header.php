@@ -2,13 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Zombienauts</title>
+    <meta charset="<?php bloginfo('charset'); ?>">
+    <title><?php bloginfo('name'); ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
     <!-- JQUERY -->
     <link rel="shortcut icon" href="<?php echo get_bloginfo('template_directory'); ?>/cositas/favicon.ico" type="image/x-icon">
+    <!-- link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" /> -->
     <!-- FAVICON -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- BOOTSTRAP -->
@@ -51,13 +52,22 @@
             </div>
             
             <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav menu">
+                <!--<ul class="nav navbar-nav menu">
                     <li><a href="mars.html"><span>MARS</span></a></li>
                     <li><a href="news.html"><span>NEWS</span></a></li>
                     <li><a href="go.html"><span>GO GO GO!</span></a></li>
                     <li><a href="about.html"><span>ABOUT US</span></a></li>
-                </ul>
+                </ul>-->
+
+
+                <?php wp_nav_menu( array('menu' => 'Main', 'container' => 'nav' )); ?>
+
             </div>
+
+
+
+
+
         </div>
     </nav>    
 </header>
