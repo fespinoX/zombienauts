@@ -1,37 +1,32 @@
 <?php get_header(); ?>
 
-<!--PRESENTACION CONTACTO-->
-		<div id="presentacion-contacto">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h2>Encontranos</h2>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--CONTACTO-->
-		<div id="contacto">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<h3>Envianos tu consulta</h3>
+    <div id="SUBcover">
+        <div id="SUBtitulo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1 class="wow bounceInUp">Go Go Go</h1>
+                        <p>I want to go to Mars! Take me there!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="form">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 col-sm-12">
+
+                    <p>So... you've decided you want to come with us to the great red planet. That's awesome! We'll take you there! Just let us know a little bit about yourself right here below:</p>
 						<div>
 							<!-- do_shortcode: devuelve el contenido de etiquetas shortcode-->
 							<?php echo do_shortcode('[contact-form-7 id="76" title="Contact form 1"]'); ?>
 						</div>
 					</div>
-					<div class="col-md-6" id="locales">
-						<div class="row">
 
-						<div class="row">
-							<div class="col-md-12 hidden-xs hidden-sm">
-								<?php echo wp_get_attachment_image(94, '', false, array( "class" => "img-responsive", "alt" => get_post_meta(94, '_wp_attachment_image_alt', true)));?>
-							</div>
-						</div>
 					</div>				
 				</div>
-			</div>
 		</div>
 		
 <?php get_footer(); ?>

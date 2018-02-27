@@ -1,0 +1,28 @@
+.data_display{height:400px;}
+.content_display .left {border: 3px solid #cccccc;border-radius: 50%;height: 66px;overflow: hidden;width: 66px;}
+.auth_info p {line-height: 12px;margin-bottom: 0;}
+.content_display .auth_info {float: left;    width: auto;}
+.content_display .auth_info {float: right;}
+.auth_info p:first-child {color: #33A5D9;}
+.bottom-testimonail {width: auto;float: right;display: inline-block;}
+.bottom-testimonail .left {float: left;margin-right: 10px;}
+.testimonails .data_display {overflow: visible !important;}
+.testimonails .full {overflow: hidden;padding-top: 15px;}
+.testimonails .testimonial_content {position: relative;}
+.testimonails .testimonial_content {position: relative;}
+.data_display {position: relative;}
+.front_end_data {position: absolute;top: 50% !important;transform: translateY(-50%);-o-transform: translateY(-50%);-moz-transform: translateY(-50%);-ms-transform: translateY(-50%);-webkit-transform: translateY(-50%);}
+.bottom-testimonail .auth_info p {font-size: 12px;line-height:14px}
+.auth_info p:first-child {font-size: 15px;}
+.content_display .bottom-testimonail .auth_info p:first-child{ font-weight: bold;padding-bottom: 8px;}
+.content_display .bottom-testimonail .auth_info p {padding-bottom: 2px;margin-bottom:0px;}
+.testimonial_content::before {background-image: url("../images/quote-before.png");background-repeat: no-repeat;content: "";display: inline-block;height: 23px;width: 17px;}
+.testimonial_content::after {background-image: url("../images/quote-after.png");background-repeat: no-repeat;content: "";display: inline-block;height: 23px;transform: rotateX(150deg);width: 18px;}
+
+/* Start */
+.content_display_short .left {border: 3px solid #cccccc;border-radius: 50%;height: 66px;overflow: hidden;width: 66px;}
+.content_display_short .auth_info {float: left;    width: auto;}
+.content_display_short .auth_info {float: right;}
+.content_display_short .bottom-testimonail .auth_info p:first-child{ font-weight: bold;padding-bottom: 8px;}
+.content_display_short .bottom-testimonail .auth_info p {padding-bottom: 2px;margin-bottom:0px;}
+/* end */

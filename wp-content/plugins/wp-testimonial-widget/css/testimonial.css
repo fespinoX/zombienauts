@@ -1,0 +1,39 @@
+.content_display, .content_display_short { font-family: Arial, sans-serif; }
+.front_end_data { text-align: center; }
+.swp_author_img { width: 80px; height: 80px; border-radius: 100%; margin: 0px 20px 20px; position: relative; overflow: hidden; border: 1px solid #cccccc; }
+.content_display .swp_author_img { display: block; float: none; margin: 0 auto 20px; }
+.content_display_short .auth_info { display: inline-block; padding-top: 17px; text-align: left; }
+.content_display .auth_info { display: block; padding-top: 17px; text-align: center; }
+.auth_info p { color: #51b8f1; display: inline-block; font-size: 14px; font-family: Arial, sans-serif; }
+.auth_info .designation p { font-weight: normal; color: #000; font-size: 12px; }
+.auth_info p.authName { position: relative; line-height: 20px; margin-bottom: 8px; font-size: 16px; font-weight: bold; color: #000; }
+.auth_info p.authName:after { width: 100%; height: 2px; background-color: #e4f2f4; display: block; bottom: -5px; left: 0; position: absolute; content: ""; }
+.bottom-testimonail { display: inline-block; overflow: hidden; }
+.swp_author_img { display: inline-block; float: left; }
+.auth_info .testimonial_country { display: block; margin: 15px 0; }
+.content_display_short button.slick-next, .content_display_short button.slick-prev, .content_display button.slick-next, .content_display button.slick-prev { background-color: #F1F1F1; width: 30px; height: 30px; border-radius: 25px; }
+.content_display_short button.slick-next:hover, .content_display_short button.slick-prev:hover, .content_display button.slick-next:hover, .content_display button.slick-prev:hover { opacity: 1; }
+.content_display .slick-list, .content_display_short .slick-list { padding: 0 30px; }
+.content_display_short button.slick-next, .content_display button.slick-next { right: 0px; }
+.content_display_short button.slick-prev, .content_display button.slick-prev { left: 0px; }
+.content_display_short .slick-dots, .content_display .slick-dots { bottom: -45px; position: static; margin-bottom: 15px; }
+p.testimonial_content { font-size: 20px; line-height: 30px; padding: 25px; }
+.content_display p.testimonial_content{ font-size: 16px; line-height: 26px; padding: 60px 0 0 0; }
+.content_display_short p.testimonial_content { font-size: 16px; line-height: 26px; padding: 60px 25px 25px 25px; }
+.testimonial_content { position: relative; padding-top: 50px; }
+.front_end_data .testimonial_content:before { position: absolute; content: ""; background-image: url('../images/quotes-bg.png'); background-repeat: no-repeat; top: 0px; left: 0; right: 0; margin: auto; width: 60px; height: 43px; display: block; z-index: -1; }
+.content_display .slick-prev:before, .content_display .slick-next:before, .content_display_short .slick-prev:before, .content_display_short .slick-next:before { color: #000000; }
+.content_display .slick-dots li button:before, .content_display_short .slick-dots li button:before { font-size: 34px; }
+.content_display .slick-dots li.slick-active button:before, .content_display_short .slick-dots li.slick-active button:before { color: #51b8f1; opacity: 1; }
+.content_display .slick-dots li button:before, .content_display_short .slick-dots li button:before { color: #51b8f1; opacity: 0.3; }
+.content_display  button.slick-next, .content_display_short  button.slick-next { background-color: transparent !important; background-image: url('../images/next.png'); z-index: 9; opacity: 0.8;background-repeat:no-repeat; }
+.content_display .slick-disabled, .content_display_short .slick-disabled { opacity: 0.3 !important; cursor: not-allowed; }
+.content_display  button.slick-prev, .content_display_short  button.slick-prev { background-color: transparent !important; background-image: url('../images/prev.png'); z-index: 9; opacity: 0.8;background-repeat:no-repeat; }
+.content_display  button.slick-next:before, .content_display_short  button.slick-next:before, .content_display  button.slick-prev:before, .content_display_short  button.slick-prev:before { display: none; }
+.content_display .slick-dots li, .content_display_short .slick-dots li { border: none; }
+.content_display a, .content_display_short a { color: #51b8f1; text-decoration: underline; }
+.content_display a:hover, .content_display_short a:hover { color: #000000; text-decoration: underline; }
+.content_display ul.slick-dots li, .content_display_short ul.slick-dots li { display: inline-block !important; }
+@media (max-width:767px) {
+	.swp_author_img { display: block; float: none !important; margin: 0 auto 20px; }
+}

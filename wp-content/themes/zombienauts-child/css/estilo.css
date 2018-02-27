@@ -1,0 +1,778 @@
+/* PALETA DE COLORES */
+
+/*
+
+VERDE claro_ #B3C43E
+VERDE oscuro_ #009F6D
+BORDO_ #AC0D38
+VIOLETA_ #8F2796
+GRIS_ #4C4C4C
+NEGRO_ #2b2b2b
+BLANCO_ #D5D5D5
+
+
+DE LAS IMAGENES
+
+AMARILLO_ #EBCF47
+NARANJA_ #F37B3E
+ROSITA_ #D77282
+PALIDO_ #FD9E8C
+AZUL_ #256CA4
+VERDE_ #719861
+
+
+SEMI BLANCO_ #E6E1D7
+*/
+
+
+/* FUENTES */
+
+/*
+font-family: 'i_pixel_uregular';
+font-family: 'telegramaraw';
+
+font-family: 'gt_walsheimregular';
+font-family: 'gt_walsheimbold';
+
+font-family: 'bebas_neueregular';
+*/
+
+
+
+/* COSITAS GENERALES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gt_walsheimregular';
+}
+
+body{
+    background-color: #2b2b2b;
+}
+
+p{
+    font-size: 16px;
+}
+
+::selection {
+  background: #D77282; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #D77282; /* Gecko Browsers */
+}
+
+/* [COSITAS GENERALES] BOTONES */
+
+.portaBoton{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.botonBase{
+    display: inline-block;
+    padding: 20px 30px;
+    border: 1px solid rgba(241,245,247,0.4);
+    background-color: transparent;
+    color: #E6E1D7;
+    text-transform: uppercase;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.botonBase:focus,
+.botonBase:hover{
+    transform: scale(1.1);
+    border-color: #E6E1D7;
+    color: #E6E1D7;
+    text-decoration: none;
+
+}
+
+
+/* MENU */
+
+.navbar {
+    position: relative;
+    margin-bottom: 0;
+    border: none;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.menu {
+    list-style-type: none;
+    margin-top: 50px;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    color: #fff;
+}
+
+.menu a{
+    padding-bottom: 5px;
+}
+
+
+.menu a span,
+.menu a span {
+    border-bottom: transparent;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.menu a:focus span,
+.menu a:hover span,
+.menu .active span {
+    border-bottom: 1px solid #fff;
+}
+
+
+.menu li a {
+    padding: 0 30px;
+    margin: 0 1px;
+    color: #fff;
+    font-family: 'gt_walsheimregular';
+    font-size: 15px;
+    display: inline-block;
+}
+
+#logo {
+    height: 60px;
+    width: 60px;
+    font-size: 0;
+    position: absolute;
+    margin-top: 30px;
+}
+
+#logo img{
+    width: 100%;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+#logo:focus img,
+#logo:hover img{
+    width: 110%; 
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #fff;
+    margin-top: 40px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+@media (max-width: 767px){
+
+    .menu {
+        margin-top: 10px;
+    }
+
+}
+
+.navbar-default .navbar-toggle:focus, 
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-collapse, 
+.navbar-default .navbar-form {
+    border: 0px;
+}
+
+
+/* FOOTER */
+
+footer{
+    background-color: #719861;
+}
+
+
+
+/* [INDEX] COVER */
+
+    /* foto cover */
+
+#cover{
+    height: 100vh;
+    width: 100%;
+    background-color: #256CA4;
+}
+
+    /* video hero */
+
+/*
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+
+*/
+
+    /* video cover personalizado*/
+
+
+/*
+
+.homepage-hero-module{
+    background-color: aqua;
+}
+
+*/
+
+
+#titulo{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    color: #E6E1D7;
+    margin-top: 25vh;
+}
+
+#titulo h1{
+    font-family: 'bebas_neueregular';
+    text-transform: uppercase;
+    font-size: 150px;
+}
+
+#titulo h1 span{
+    font-size: 350px;
+    line-height: 205px;
+    font-family: 'bebas_neueregular';
+}
+
+#titulo p{
+    font-family: 'gt_walsheimregular';
+    font-size: 18px;
+}
+
+
+@media (max-width: 767px){
+
+
+    #titulo{
+        margin-top: 35vh;
+    }
+
+    #titulo h1{
+        font-size: 90px;
+    }
+
+    #titulo h1 span{
+        font-size: 250px;
+        line-height: 160px;
+    }
+
+    #titulo p{
+        font-size: 18px;
+    }
+
+}
+
+
+/* [INDEX] INTRO */
+
+#intro{
+    padding: 70px 0;
+    background-color: #2b2b2b;
+}
+
+#intro h2{
+    font-family: 'bebas_neueregular';
+    text-transform: uppercase;
+    font-size: 80px;
+    color: #F37B3E;
+}
+
+#intro .bajada{
+    padding: 10px 0 15px 0;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+#intro p{
+    font-size: 16px;
+    color: #e6e1d7;
+}
+
+#intro b{
+    color: #256CA4;
+    font-weight: 500;
+}
+
+
+/* [INDEX] REASONS */
+
+#reasons{
+    padding-bottom: 60px;
+}
+
+#reasons h3{
+    border-bottom: 1px solid #F37B3E;
+    font-family: 'bebas_neueregular';
+    font-size: 50px;
+    color: #F37B3E;
+}
+
+#reasons p{
+    color: #E6E1D7;
+    font-size: 35px;
+}
+
+#reasons .contenedorReasons{
+    min-height: 300px;
+}
+
+
+/* [INDEX] COUNTER */
+
+#counter{
+    /*background-image: url('../cositas/img/zombieyuri.jpg');*/
+    background-color: #D77282;
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+}
+
+#counter .counter-value{
+    font-size: 200px;
+    line-height: 160px;
+    color: #2b2b2b;
+    font-family: 'bebas_neueregular';
+}
+
+#counter p{
+    color: #2b2b2b;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+
+@media (max-width: 767px){
+
+    #counter .counter-value {
+        font-size: 150px;
+        line-height: 110px;
+        margin-top: 25px;
+    }
+}
+
+
+/* [INDEX] NOTICIAS */
+
+#news{
+    background-color: #2b2b2b;
+    padding: 70px 0;
+    color: #D5D5D5;
+}
+
+#news .col-sm-6{
+    margin-bottom: 20px;
+}
+
+#news .portaImagenNoticia{
+    height: 500px;
+    padding-top: 85%;
+    background-image: url('../cositas/img/rocket.jpg');
+
+    filter: grayscale(100%); /* Current draft standard */
+    -webkit-filter: grayscale(100%); /* New WebKit */
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%); 
+    -o-filter: grayscale(100%); /* Not yet supported in Gecko, Opera or IE */ 
+    filter: url(resources.svg#desaturate); /* Gecko */
+    filter: gray; /* IE */
+    -webkit-filter: grayscale(1); /* Old WebKit */
+
+    background-size: cover;
+    background-position: top;
+    -webkit-transition-duration: 0.4s;
+}
+
+#news .portaImagenNoticia:hover,
+#news .portaImagenNoticia:active{
+    padding-top: 85%;
+    background-image: url('../cositas/img/rocket.jpg');
+    background-position: top;
+
+    filter: none;
+    -webkit-filter: none;
+    -moz-filter: none;
+    -ms-filter: none;
+    -o-filter: none;
+}
+
+#news .portaImagenNoticia .tituloNoticia{
+    color: #F37B3E;
+    text-transform: uppercase;
+    font-family: 'bebas_neueregular';
+}
+
+#news .portaImagenNoticia .tituloNoticia h2{
+    display: inline-block;
+    padding: 5px 5px 5px 20px;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.hover-barrido-der {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hover-barrido-der:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #F37B3E;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hover-barrido-der:hover, 
+.hover-barrido-der:focus, 
+.hover-barrido-der:active {
+  color: #E6E1D7;
+}
+.hover-barrido-der:hover:before, 
+.hover-barrido-der:focus:before, 
+.hover-barrido-der:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+#news .portaImagenNoticia .categoriaNoticia{
+    margin-left: 20px;
+    padding: 5px;
+    background-color: #F37B3E;
+    color: #E6E1D7;
+}
+
+
+#news .portaImagenNoticia p{
+    padding-left: 15px;
+    text-align: left;
+}
+
+#news .portaTexto{
+    padding: 20px;
+    background-color: #E6E1D7;
+    color: #2b2b2b;
+    font-size: 14px;
+}
+
+
+@media (max-width: 767px){
+
+    #news .portaImagenNoticia,
+    #news .portaImagenNoticia{
+        padding-top: 20%;
+        background-image: url('../cositas/img/rocket.jpg');
+        background-position: top;
+
+        filter: none;
+        -webkit-filter: none;
+        -moz-filter: none;
+        -ms-filter: none;
+        -o-filter: none;
+    }
+
+    #news .portaImagenNoticia:hover,
+    #news .portaImagenNoticia:active{
+        padding-top: 20%;
+    }
+
+
+    .hover-barrido-der, 
+    .hover-barrido-der, 
+    .hover-barrido-der {
+        color: #E6E1D7;
+        background: #F37B3E;
+    }
+
+}
+
+
+
+/* [SUBPAGINAS] COVER */
+
+
+#SUBcover{
+    height: 40vh;
+    width: 100%;
+    background-color: #D77282;
+}
+
+
+#SUBtitulo{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    color: #2b2b2b;
+    margin-top: 12vh;
+}
+
+#SUBtitulo h1{
+    font-family: 'bebas_neueregular';
+    text-transform: uppercase;
+    font-size: 100px;
+}
+
+
+#SUBtitulo p{
+    font-family: 'gt_walsheimregular';
+    font-size: 20px;
+}
+
+
+@media (max-width: 767px){
+
+    #SUBtitulo h1{
+        font-size: 50px;
+    }
+
+    #SUBtitulo p{
+        font-size: 16px;
+    }
+
+}
+
+
+
+
+
+
+
+/* [MARTE] FOTO Y TEXTO */
+
+.fotoYtexto{
+    display: flex;
+    height: 650px;
+}
+
+.fotoYtexto div{
+    width: 50%;
+    display: inline-block;
+}
+
+.fotoYtexto .portaTabla{
+    display: table; 
+    height: 650px; 
+    overflow: hidden;
+}
+
+.fotoYtexto .fotoIzq,
+.fotoYtexto .fotoDer{
+        overflow: hidden;
+}
+
+.fotoYtexto .fotoIzq img,
+.fotoYtexto .fotoDer img{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.fotoYtexto .textoDer,
+.fotoYtexto .textoIzq{
+    display: table-cell; 
+    vertical-align: middle;
+    padding: 0 30px;
+    background-color: #E6E1D7;
+}
+
+.fotoYtexto .textoDer p,
+.fotoYtexto .textoIzq p{
+    font-size: 16px;
+}
+
+
+@media (max-width: 767px){
+
+    .fotoYtexto {
+        display: block;
+        height: auto;
+    }
+
+    .fotoYtexto div {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .portaTabla,
+    .fotoIzq,
+    .fotoDer,
+    .textoIzq,
+    .textoDer,
+     {
+        display: block;
+        width: 100%;
+    }
+
+
+
+}
+
+
+/* [NEWS DETALLE] */
+
+
+
+/* [GO GO GO] */
+
+#form{
+    padding-top: 70px;
+    min-height: 58vh;
+    background-color: #2b2b2b;
+    color: #D5D5D5;
+}
+
+.inputForm{
+    width: 100%;
+    height: 35px;
+    margin-top: 5px;
+    padding-left: 10px;
+    background-color: transparent;
+    -webkit-appearance: none;
+    border: 0;
+    border-bottom: 1px #E6E1D7 solid;
+    border-left: 1px #E6E1D7 solid;
+}
+
+.inputForm:focus { 
+    outline: none !important;
+    border:1px solid #D77282;
+    box-shadow: 0 0 10px #D77282;
+}
+
+.textareaForm{
+    height: 300px;
+    padding-top: 10px;
+    resize: none;
+}
+
+#form form{
+    margin-top: 20px;
+}
+
+#form form label{
+    margin-top: 20px;
+}
+
+/* [ABOUT US] */
+
+.aboutCada{
+    height: 100vh;
+    background-size: cover;
+    -webkit-transition-duration: 0.4s;
+}
+
+.aboutCada:nth-of-type(1){
+    background-image: url('../cositas/img/about1_pre.jpg');
+}
+
+.aboutCada:nth-of-type(1):hover,
+.aboutCada:nth-of-type(1):active,
+.aboutCada:nth-of-type(1):focus{
+    background-image: url('../cositas/img/about1_post.jpg');
+}
+
+.aboutCada:nth-of-type(2){
+    background-image: url('../cositas/img/about1_pre.jpg');
+}
+
+.aboutCada:nth-of-type(2):hover,
+.aboutCada:nth-of-type(2):active,
+.aboutCada:nth-of-type(2):focus{
+    background-image: url('../cositas/img/about1_post.jpg');
+}
+
+.aboutCada:nth-of-type(3){
+    background-image: url('../cositas/img/about1_pre.jpg');
+}
+
+.aboutCada:nth-of-type(3):hover,
+.aboutCada:nth-of-type(3):active,
+.aboutCada:nth-of-type(3):focus{
+    background-image: url('../cositas/img/about1_post.jpg');
+}

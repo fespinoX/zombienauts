@@ -1,7 +1,6 @@
 <?php
 
-//NAVBAR
-//chequeamos que exista la función register_nav_menus y la definimos
+//MENU
 if(function_exists('register_nav_menus')){		
 	register_nav_menus(
 		array(
@@ -26,25 +25,18 @@ if(function_exists('register_sidebar')){
 	);
 }
 
-/*Excluyo la categoría TIPS del widget de CATEGORIAS de WordPress*/
-function exclude_widget_categories($args) {
-    $excluded = '6';
-    $args['exclude'] = $excluded;
- 
-    return $args;
-}
-add_filter( 'widget_categories_args', 'exclude_widget_categories', 10, 1 ); // para el formato de lista
-
-/*Excluyo la categoría TIPS del widget del BUSCADOR de WordPress*/
+//Exclude Mars from search
 function SearchFilter($query) {
 	if ($query->is_search) {
-		$query->set('cat','-6');
+		$query->set('cat','-2');
 	}
 	return $query;
 }
 add_filter('pre_get_posts','SearchFilter'); 
  
-//Limito la cantidad de caracteres del extracto
+
+
+//Extract limit
 function get_excerpt($count){  
     $permalink = get_permalink($post->ID);
     $excerpt = get_the_content(); 
@@ -52,11 +44,10 @@ function get_excerpt($count){
     $excerpt = substr($excerpt, 0, $count);
     $excerpt = substr($excerpt, 0, strripos($excerpt, " "));
     $excerpt = $excerpt.'...';
-    //$excerpt = $excerpt.'... <a href="'.$permalink.'">leer mas</a>';
     return $excerpt;
 }
  
-//POSTEOS
+//Posts thumbnails
 add_theme_support('post-thumbnails');
 add_image_size('thumbnail',730,487,true);
 

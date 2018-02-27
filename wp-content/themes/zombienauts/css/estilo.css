@@ -35,6 +35,9 @@ font-family: 'gt_walsheimregular';
 font-family: 'gt_walsheimbold';
 
 font-family: 'bebas_neueregular';
+
+font-family: 'Sigmar One', cursive;
+font-family: 'Alfa Slab One', cursive;
 */
 
 
@@ -71,6 +74,7 @@ p{
 }
 
 .botonBase{
+    font-family: 'Alfa Slab One', cursive;
     display: inline-block;
     padding: 20px 30px;
     border: 1px solid rgba(241,245,247,0.4);
@@ -115,10 +119,18 @@ p{
 
 .menu {
     list-style-type: none;
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 0;
     overflow: hidden;
     background-color: transparent;
+}
+
+.menu-item {
+    display: inline;
+}
+
+.menu-item:hover{
+ cursor: pointer;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -130,32 +142,24 @@ p{
     color: #fff;
 }
 
-.menu a{
-    padding-bottom: 5px;
-}
-
-
-.menu a span,
-.menu a span {
-    border-bottom: transparent;
+.menu li a {
+    padding: 0 30px;
+    margin: 0 6px;
+    color: black;
+    font-family: 'Alfa Slab One', cursive;
+    background-color: #fae857;
+    font-size: 22px;
+    display: inline-block;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
 }
 
-.menu a:focus span,
-.menu a:hover span,
+.menu li a:focus,
+.menu li a:hover,
 .menu .active span {
-    border-bottom: 1px solid #fff;
-}
-
-
-.menu li a {
-    padding: 0 30px;
-    margin: 0 1px;
-    color: #fff;
-    font-family: 'gt_walsheimregular';
-    font-size: 15px;
-    display: inline-block;
+    font-size: 27px;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 #logo {
@@ -208,10 +212,63 @@ p{
 /* FOOTER */
 
 footer{
-    background-color: #719861;
+    background-color: #fae857;
 }
 
 
+
+/* SIDEBAR */
+
+.sidebar{
+        background-color: #4b72c3;
+        color: #2b2b2b;
+        padding: 10px 20px;
+}
+
+.sidebar aside{
+    height: 150px;
+    width: 31%;
+    margin: 25px 1%;
+    padding: 15px;
+    display: inline-block;
+    background-color: #fae857;
+    box-shadow: 12px 12px;
+}
+
+
+.sidebar input[type="text"] {
+    width: 100%;
+    height: 35px;
+    margin-top: 5px;
+    padding-left: 10px;
+    background-color: transparent;
+    -webkit-appearance: none;
+    border: 0;
+    border-bottom: 1px #2b2b2b solid;
+    border-left: 1px #2b2b2b solid;
+}
+
+.sidebar input[type="submit"] {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: 1px solid #2b2b2b;
+    background-color: transparent;
+    color: #2b2b2b;
+    text-transform: uppercase;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+
+.sidebar input[type="submit"]:focus,
+.sidebar input[type="submit"]:hover{
+    transform: scale(1.1);
+    border-color: #2b2b2b;
+    color: #2b2b2b;
+    text-decoration: none;
+
+}
 
 /* [INDEX] COVER */
 
@@ -220,66 +277,9 @@ footer{
 #cover{
     height: 100vh;
     width: 100%;
-    background-color: #256CA4;
+    background-image: url('../cositas/img/bgheader2.jpg');
+    background-size: cover;
 }
-
-    /* video hero */
-
-/*
-.homepage-hero-module {
-    border-right: none;
-    border-left: none;
-    position: relative;
-}
-.no-video .video-container video,
-.touch .video-container video {
-    display: none;
-}
-.no-video .video-container .poster,
-.touch .video-container .poster {
-    display: block !important;
-}
-.video-container {
-    position: relative;
-    bottom: 0%;
-    left: 0%;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    background: #000;
-}
-.video-container .poster img {
-    width: 100%;
-    bottom: 0;
-    position: absolute;
-}
-.video-container .filter {
-    z-index: 100;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.4);
-    width: 100%;
-}
-.video-container video {
-    position: absolute;
-    z-index: 0;
-    bottom: 0;
-}
-.video-container video.fillWidth {
-    width: 100%;
-}
-
-*/
-
-    /* video cover personalizado*/
-
-
-/*
-
-.homepage-hero-module{
-    background-color: aqua;
-}
-
-*/
 
 
 #titulo{
@@ -291,15 +291,15 @@ footer{
 }
 
 #titulo h1{
-    font-family: 'bebas_neueregular';
+    font-family: 'Sigmar One', cursive;
     text-transform: uppercase;
-    font-size: 150px;
+    font-size: 100px;
 }
 
 #titulo h1 span{
-    font-size: 350px;
+    font-size: 240px;
     line-height: 205px;
-    font-family: 'bebas_neueregular';
+    font-family: 'Sigmar One', cursive;
 }
 
 #titulo p{
@@ -312,16 +312,16 @@ footer{
 
 
     #titulo{
-        margin-top: 35vh;
+        margin-top: 25vh;
     }
 
     #titulo h1{
-        font-size: 90px;
+        font-size: 40px;
     }
 
     #titulo h1 span{
-        font-size: 250px;
-        line-height: 160px;
+        font-size: 100px;
+        line-height: 100px;
     }
 
     #titulo p{
@@ -334,25 +334,28 @@ footer{
 /* [INDEX] INTRO */
 
 #intro{
-    padding: 70px 0;
+    padding: 70px 0 0 0;
     background-color: #2b2b2b;
+    background-image: url(../cositas/img/estrellitas.png);
+    background-size: cover;
 }
 
 #intro h2{
-    font-family: 'bebas_neueregular';
+    font-family: 'Sigmar One', cursive;
     text-transform: uppercase;
-    font-size: 80px;
+    font-size: 44px;
     color: #F37B3E;
 }
 
 #intro .bajada{
+    font-family: 'Alfa Slab One', cursive;
     padding: 10px 0 15px 0;
     text-transform: uppercase;
     font-size: 24px;
 }
 
 #intro p{
-    font-size: 16px;
+    font-size: 20px;
     color: #e6e1d7;
 }
 
@@ -365,12 +368,12 @@ footer{
 /* [INDEX] REASONS */
 
 #reasons{
-    padding-bottom: 60px;
+    margin-top: 20px;
 }
 
 #reasons h3{
     border-bottom: 1px solid #F37B3E;
-    font-family: 'bebas_neueregular';
+    font-family: 'Alfa Slab One', cursive;
     font-size: 50px;
     color: #F37B3E;
 }
@@ -384,28 +387,35 @@ footer{
     min-height: 300px;
 }
 
+#reasons #zombiastronauta{
+    background-image: url(../cositas/img/zombi-austronauta.png);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
 
 /* [INDEX] COUNTER */
 
 #counter{
     /*background-image: url('../cositas/img/zombieyuri.jpg');*/
-    background-color: #D77282;
+    background-image: url(../cositas/img/pattern-brain.jpg);
     background-size: cover;
     background-position: center;
-    padding: 150px 0;
+    padding: 80px 0;
 }
 
 #counter .counter-value{
-    font-size: 200px;
-    line-height: 160px;
+    font-size: 100px;
+    line-height: 80px;
     color: #2b2b2b;
-    font-family: 'bebas_neueregular';
+    font-family: 'Sigmar One', cursive;
 }
 
 #counter p{
     color: #2b2b2b;
-    text-transform: uppercase;
-    font-size: 20px;
+    font-size: 18px;
+    font-family: 'Alfa Slab One', cursive;
 }
 
 
@@ -466,14 +476,13 @@ footer{
 #news .portaImagenNoticia .tituloNoticia{
     color: #F37B3E;
     text-transform: uppercase;
-    font-family: 'bebas_neueregular';
+    font-family: 'Sigmar One', cursive;
 }
 
 #news .portaImagenNoticia .tituloNoticia h2{
     display: inline-block;
     padding: 5px 5px 5px 20px;
-    font-size: 40px;
-    text-decoration: underline;
+    font-size: 25px;
 }
 
 .hover-barrido-der {
@@ -527,6 +536,14 @@ footer{
     padding: 5px;
     background-color: #F37B3E;
     color: #E6E1D7;
+    display: inline;
+}
+
+#news .portaImagenNoticia .categoriaNoticia ul,
+#news .portaImagenNoticia .categoriaNoticia ul li,
+#news .portaImagenNoticia .categoriaNoticia ul li a{
+    display: inline;
+    color: #fff;
 }
 
 
@@ -574,6 +591,87 @@ footer{
 }
 
 
+/* [NEWS] DETALLE */
+
+#newsDetalle{
+    padding: 70px 0;
+    background-color: #2b2b2b;
+}
+
+#newsDetalle h2{
+    font-family: 'Sigmar One', cursive;
+    text-transform: uppercase;
+    font-size: 80px;
+    color: #F37B3E;
+}
+
+#newsDetalle .bajada{
+    padding: 10px 0 15px 0;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+#newsDetalle p{
+    font-size: 16px;
+    color: #e6e1d7;
+    margin-top: 25px;
+}
+
+#newsDetalle strong{
+    color: #F37B3E;
+    font-weight: 500;
+}
+
+#newsDetalle h3{
+    color: #D77282;
+    font-family: 'Sigmar One', cursive;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+#newsDetalle a{
+    color: #4b72c3;
+}
+
+#newsDetalle .comment-author{
+    color: #fff;
+}
+
+#newsDetalle input[type="submit"] {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+#newsDetalle input[type="submit"]:focus,
+#newsDetalle input[type="submit"]:hover{
+    transform: scale(1.1);
+    border-color: #fff;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+#newsDetalle textarea{
+    height: 200px!important;
+    padding-top: 10px;
+    resize: none;
+        width: 100%;
+    height: 35px;
+    margin-top: 5px;
+    padding-left: 10px;
+    background-color: transparent;
+    -webkit-appearance: none;
+    border: 0;
+    border-bottom: 1px #E6E1D7 solid;
+    border-left: 1px #E6E1D7 solid;
+
+}
 
 /* [SUBPAGINAS] COVER */
 
@@ -584,6 +682,11 @@ footer{
     background-color: #D77282;
 }
 
+#SUBcover2{
+    height: 40vh;
+    width: 100%;
+    background-color: #F37B3E;
+}
 
 #SUBtitulo{
     width: 100%;
@@ -594,9 +697,13 @@ footer{
 }
 
 #SUBtitulo h1{
-    font-family: 'bebas_neueregular';
+    font-family: 'Sigmar One', cursive;
     text-transform: uppercase;
     font-size: 100px;
+}
+
+#SUBtitulo .postTitulo{
+    font-size: 60px;
 }
 
 
@@ -620,77 +727,24 @@ footer{
 
 
 
+/* [MARS] FOTO Y TEXTO */
 
-
-
-
-/* [MARTE] FOTO Y TEXTO */
-
-.fotoYtexto{
-    display: flex;
-    height: 650px;
+#mars h2{
+    color: #F37B3E;
+    font-family: 'Sigmar One', cursive;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
 }
 
-.fotoYtexto div{
-    width: 50%;
-    display: inline-block;
+#mars p{
+    color: #e6e1d7;
 }
 
-.fotoYtexto .portaTabla{
-    display: table; 
-    height: 650px; 
-    overflow: hidden;
-}
-
-.fotoYtexto .fotoIzq,
-.fotoYtexto .fotoDer{
-        overflow: hidden;
-}
-
-.fotoYtexto .fotoIzq img,
-.fotoYtexto .fotoDer img{
-    min-width: 100%;
-    min-height: 100%;
-}
-
-.fotoYtexto .textoDer,
-.fotoYtexto .textoIzq{
-    display: table-cell; 
-    vertical-align: middle;
-    padding: 0 30px;
-    background-color: #E6E1D7;
-}
-
-.fotoYtexto .textoDer p,
-.fotoYtexto .textoIzq p{
-    font-size: 16px;
-}
-
-
-@media (max-width: 767px){
-
-    .fotoYtexto {
-        display: block;
-        height: auto;
-    }
-
-    .fotoYtexto div {
-        width: 100%;
-        display: inline-block;
-    }
-
-    .portaTabla,
-    .fotoIzq,
-    .fotoDer,
-    .textoIzq,
-    .textoDer,
-     {
-        display: block;
-        width: 100%;
-    }
-
-
-
+#mars .portaTexto{
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
 }
 
 
@@ -707,7 +761,9 @@ footer{
     color: #D5D5D5;
 }
 
-.inputForm{
+#form input[type="text"],
+#form input[type="email"],
+#form textarea{
     width: 100%;
     height: 35px;
     margin-top: 5px;
@@ -719,60 +775,74 @@ footer{
     border-left: 1px #E6E1D7 solid;
 }
 
-.inputForm:focus { 
+#form input[type="text"]:focus,
+#form input[type="email"]:focus,
+#form textarea:focus{ 
     outline: none !important;
     border:1px solid #D77282;
     box-shadow: 0 0 10px #D77282;
 }
 
-.textareaForm{
+#form textarea{
     height: 300px;
     padding-top: 10px;
     resize: none;
 }
 
+#form input[type="submit"] {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+
+#form input[type="submit"]:focus,
+#form input[type="submit"]:hover{
+    transform: scale(1.1);
+    border-color: #fff;
+    color: #fff;
+    text-decoration: none;
+
+}
+
 #form form{
-    margin-top: 20px;
+    margin: 20px;
 }
 
 #form form label{
     margin-top: 20px;
+    width: 100%;
 }
 
-/* [ABOUT US] */
+#form .wpcf7-mail-sent-ok{
+    font-family: 'Alfa Slab One', cursive;
+    color: #719861;
+    font-size: 18px;
+}
 
-.aboutCada{
-    height: 100vh;
+#form .wpcf7-validation-errors{
+    font-family: 'Alfa Slab One', cursive;
+    color: #F37B3E;
+    font-size: 18px;
+}
+
+div.wpcf7-mail-sent-ok,
+div.wpcf7-validation-errors {
+    border: 0!important;
+}
+
+
+/*404*/
+
+#404{
+        background-color: #2b2b2b;
+    background-image: url(../cositas/img/estrellitas.png);
     background-size: cover;
-    -webkit-transition-duration: 0.4s;
-}
-
-.aboutCada:nth-of-type(1){
-    background-image: url('../cositas/img/about1_pre.jpg');
-}
-
-.aboutCada:nth-of-type(1):hover,
-.aboutCada:nth-of-type(1):active,
-.aboutCada:nth-of-type(1):focus{
-    background-image: url('../cositas/img/about1_post.jpg');
-}
-
-.aboutCada:nth-of-type(2){
-    background-image: url('../cositas/img/about1_pre.jpg');
-}
-
-.aboutCada:nth-of-type(2):hover,
-.aboutCada:nth-of-type(2):active,
-.aboutCada:nth-of-type(2):focus{
-    background-image: url('../cositas/img/about1_post.jpg');
-}
-
-.aboutCada:nth-of-type(3){
-    background-image: url('../cositas/img/about1_pre.jpg');
-}
-
-.aboutCada:nth-of-type(3):hover,
-.aboutCada:nth-of-type(3):active,
-.aboutCada:nth-of-type(3):focus{
-    background-image: url('../cositas/img/about1_post.jpg');
 }

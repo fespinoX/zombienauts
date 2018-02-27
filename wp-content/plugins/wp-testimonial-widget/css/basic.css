@@ -1,0 +1,37 @@
+.chkRequired { color: #FF0026 }
+.frm_testi { margin-top: 8px; }
+input[type="text"].error, textarea.error { border-color: #FF0026 !important; }
+label.error { margin-left: 5px; color: #FF0026; border-color: #FF0000 !important; display: none !important; }
+.label_class { width: 250px; }
+.cancel_link { margin-left: 8px; }
+.column-Rank { width: 75px !important; }
+.cls_testi { padding-top: 15px; }
+.input_testi { margin-left: 10px; }
+label.lbl_order { margin-right: 35px; }
+.radio_order { margin-left: 50px; }
+label.lbl_effects { margin-right: 35px; }
+.input_effects { margin-left: 46px; }
+label.lbl_time { margin-right: 35px; }
+.input_time { margin-left: 38px; }
+.btn_add { margin-left: 80px !important; }
+label.lbl_submit { margin-right: 45px; }
+.hide { display: none !important; }
+.radio_order_by { margin-left: 33px; }
+.test_description { color: black !important; }
+#order-post-type #sortable { list-style-type: none; margin: 10px 0 0; padding: 0; width: 100%; }
+#order-post-type #sortable li { border: 1px solid #dddddd; cursor: move; margin: 4px 0; padding: 2px 0; }
+#order-post-type #sortable li span { background: #f9f8f8 none repeat scroll 0 0; color: #555; display: block; font-size: 13px; font-weight: bold; padding: 5px 10px; }
+.recommended_text { display: block; }
+.widget-content .custom_widget_size > input { width: 100%; }
+.widget-content .custom_widget_size > label { display: inline-block; width: 100%; }
+.widget-content .custom_widget_size.mrg-none { margin-right: 0; }
+.widget-content .custom_widget_size { margin-right: 8px; width: 47%; float: left; }
+.custom_widget_size > select { width: 100%; }
+.checkbox-group { margin-left: 150px; margin-top: -20px; }
+.checkbox-widget-group label { display: inline-block; margin: 0 26px 10px 0; vertical-align: top; }
+.checkbox-widget-group > input { margin-top: 0; vertical-align: top; }
+.widget-content .select-fields { clear: both; overflow: hidden; }
+.half-help { float: left; width: 45%; background: #fff none repeat scroll 0 0; border: 1px solid #e5e5e5; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04); margin-right: 2%; padding: 15px; }
+.widget-content .custom_widget_size:nth-child(2n+1) { clear: left; }
+.text-right { text-align: right; }
+.helplink { text-align: right; margin-bottom: 0; }

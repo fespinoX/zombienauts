@@ -14,13 +14,14 @@
 <div id="news">
         <div class="container">
             <div class="row">
-            	<?php $custom_query = new WP_Query('cat=-9'); // exclude category 9
+            	<?php $custom_query = new WP_Query('cat=-2'); // exclude category 9
 				while($custom_query->have_posts()) : $custom_query->the_post(); ?>
 
                 <div class="col-sm-6 col-md-4 col-xs-12">
                     <div class="portaImagenNoticia">
                         <a href="<?php the_permalink(); ?>" class="tituloNoticia"><h2 class="hover-barrido-der"><?php the_title(); ?></h2></a>
-                        <a href="#" class="categoriaNoticia"><?php the_category(); ?></a>
+                        <br>
+						<div class="categoriaNoticia"><?php the_category(); ?></div>
                     </div>
                     <div class="portaTexto">
                         <?php echo get_excerpt(100); ?>
@@ -32,4 +33,10 @@
 
             </div>
         </div>
+</div>
+
+<div class="sidebar">
+					<?php
+						get_sidebar();
+					?>
 </div>
